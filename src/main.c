@@ -1,35 +1,44 @@
 #include <stdio.h>
 
-int main(){
 
-    float lado, area, volumen;
-
-    printf("===========================================================\n");
-    printf("                CALCULO DE AREA Y VOLUMEN\n");
-    printf("===========================================================\n\n");
-     
-    printf("ingrese valor de lado:");
-    scanf("%f", &lado);
-
-    if(lado <= 0)
-    {printf("\nError: el lado debe ser positivo.\n");
+int is_even(int number) {
+    if(number %2 == 0) {
         return 1;
-
+    } else {
+        return 0; }
 }
-area = lado * lado;
+    
+    int main(){        int num;
+        int result;
+    
+    {
 
-volumen = lado * lado *lado;
+    printf("inserta un numero: ");
+    scanf("%d", &num);
+    
+    
+    }
 
+result = is_even(num);
+    {
+    
+    }
 
+    if(result == 1) {
+        printf("El numero es par: %d\n", num);
+    }
+    
+    else 
+    {
+        printf("El numero es impar: %d\n", num); 
+    }
+    if(num<=0)
+    {
+     printf("ingresa un numero valido\n, %d", num);
 
-printf ("\n--------------------------------------------");
-printf ("RESULTADOS:\n");
-printf("--------------------------------------------\n");
-printf("lado ingresado: %2f\n", lado);
-printf("area del cuadrado: %.2f unidades cuadradas\n", area);
-printf("volumen de cubo: %.2f unidades cubicas\n", volumen);
-printf("----------------------------------\n");
+    }
+    }
 
-return 0;
-
+int dummy(){
+    return 0;
 }
